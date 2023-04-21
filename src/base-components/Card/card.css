@@ -1,0 +1,38 @@
+.cardContainer {
+    background-color: gray;
+    border-radius: 10px;
+    display: flex;
+    width: 50%;
+    height: 160px;
+    gap: 20px;
+    overflow: hidden;
+    min-width: 350px;
+    max-width: 400px;
+}
+
+.imgAvatar {
+    height: 100%;
+    width: 50%;
+    background-size: contain;
+}
+
+.containerInfo {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.containerDetailsTitle {
+    font-size: 18px;
+}
+
+.containerDetailsStatusLive {
+    font-size: 16px;
+    color: green;
+}
+
+.containerDetailsStatusDead {
+    font-size: 16px;
+    color: red;
+}
