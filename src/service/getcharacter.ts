@@ -3,6 +3,7 @@ export interface CharacterInfo {
     imgSrc: string;
     name: string;
     status: string;
+    specie: string;
     lastKnowLocation: string;
     firstSeen: string
   }
@@ -19,10 +20,11 @@ export const getItems = async (characterId: number): Promise<CharacterInfo | nul
     const episodeData = await episodeResponse.json();
 
     return {
-        id: characterData.id,
+        id: characterData.id, 
         name: characterData.name,
         imgSrc: characterData.image,
         status: characterData.status,
+        specie: characterData.species,
         lastKnowLocation: locationData.name,
         firstSeen:  episodeData.name
     }
