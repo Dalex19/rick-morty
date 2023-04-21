@@ -3,20 +3,24 @@ import "./card.css";
 
 
 
-function Main ({ imgSrc, name, status, lastKnowLocation, firstSeen} : CharacterInfo) {
+function Main ({ imgSrc, name, status, specie,lastKnowLocation, firstSeen} : CharacterInfo) {
     return(
         <div className="cardContainer">
           <img src={imgSrc} className="imgAvatar"/>
           <div className="containerInfo">
             <div className="containerDetails">
               <h1 className="containerDetailsTitle">{name}</h1>
-              <h3 className={status == "Alive" ? "containerDetailsStatusLive" : "containerDetailsStatusDead"}>{status}</h3>
+              <h3 className={status == "Alive" ? "containerDetailsStatusLive" : "containerDetailsStatusDead"}>
+                {status} <span>{specie}</span>
+              </h3>
             </div>
             <div className="containerDetails">
-              <p>Last known location: <br/> {lastKnowLocation} </p>
+              <p className="textGray">Last known location: </p>
+              <span>{lastKnowLocation}</span>
             </div>
             <div className="containerDetails">
-              <p>First seen in: <br/> {firstSeen}</p>
+              <p className="textGray">First seen in: </p>
+              <span>{firstSeen}</span>
             </div>
           </div>
         </div>

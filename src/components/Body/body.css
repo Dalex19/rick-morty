@@ -1,11 +1,13 @@
 .containerBody{
-    height: 100%;
-    width: 100%;
+    margin: auto;
+    flex: 1;
     background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 20px 0px 20px 0px;
+    padding: 40px 0px 20px 0px;
+    width: 95vw;
+    overflow-y: hidden;
 }

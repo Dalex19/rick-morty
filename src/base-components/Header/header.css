@@ -1,18 +1,25 @@
 .containerHeader {
-    background-color: white;
-    width: 100%;
+    background: #abbaab;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #abbaab);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    width: 100vw;
     height: 40vh;
     min-height: 150px;
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
 }
 
 .containerNavBar {
+    width: 95%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 15px 0px 15px;
+    padding: 15px 0px 0px 15px;
 }
 
 .logo {
@@ -21,8 +28,26 @@
 }
 .listItem {
     display: flex;
+    align-items: center;
     list-style: none;
     gap: 20px;
+}
+
+.listItem li {
+    font-weight: 600;
+    word-spacing: 1px;
+}
+
+.listItem li:last-child {
+    border: 2px solid #D8D78F;
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
+
+.listItem li:last-child:hover {
+    color: white;
+    background-color: #D8D78F;
 }
 
 .title {

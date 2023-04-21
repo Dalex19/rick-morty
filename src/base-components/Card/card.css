@@ -1,18 +1,17 @@
 .cardContainer {
-    background-color: gray;
+    background-color: #3C3E44;
     border-radius: 10px;
     display: flex;
-    width: 50%;
-    height: 160px;
+    width: 35%;
+    height: 170px;
     gap: 20px;
     overflow: hidden;
-    min-width: 350px;
-    max-width: 400px;
+    min-width: 400px;
 }
 
 .imgAvatar {
     height: 100%;
-    width: 50%;
+    width: 40%;
     background-size: contain;
 }
 
@@ -35,4 +34,20 @@
 .containerDetailsStatusDead {
     font-size: 16px;
     color: red;
+}
+
+.containerDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.textGray {
+    color: gray;
+    font-weight: 600;
+}
+
+ span {
+    color: white;
+    letter-spacing: 1px;
 }

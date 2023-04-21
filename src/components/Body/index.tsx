@@ -15,6 +15,7 @@ function Main () {
             key={item.id}
             imgSrc={item.imgSrc}
             name={item.name}
+            specie={item.specie}
             status={item.status}
             lastKnowLocation={item.lastKnowLocation}
             firstSeen={item.firstSeen}
